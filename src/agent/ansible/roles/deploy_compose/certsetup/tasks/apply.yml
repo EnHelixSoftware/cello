@@ -39,13 +39,11 @@
   template:
     src: "{{ playbook_dir }}/../deploy_compose/certsetup/templates/marbles.j2"
     dest: "{{ fabricworkdir }}/keyfiles/marbles-connection.json"
-  with_items: "{{ allorgs }}"
 
 - name: Create connection profiles for Explorer
   template:
     src: "{{ playbook_dir }}/../deploy_compose/certsetup/templates/explorer.j2"
     dest: "{{ fabricworkdir }}/keyfiles/explorer-connection.json"
-  with_items: "{{ allorgs }}"
 
 - name: Create yaml connection profiles
   template:

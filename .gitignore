@@ -197,5 +197,6 @@ jspm_packages
 
 # Ansible modules
 #src/agent/ansible/run/*
-src/agent/ansible/vars/*
+src/agent/ansible/vars/kubeconfig
+src/agent/ansible/vars/bc1st/*
 src/agent/ansible/*.retry

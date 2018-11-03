@@ -23,8 +23,8 @@ cluster: {
   validate_certs: True,
   private_net_name: "demonet",
   root_block_device_name: "/dev/sda1", # the name by which AWS mounts the root volume as - typically /dev/sda
-  public_key_file: "/home/aleksandar/.ssh/fd.pub",
-  private_key_file: "/home/aleksandar/.ssh/fd",
+  public_key_file: "/home/ubuntu/.ssh/fd.pub",
+  private_key_file: "/home/ubuntu/.ssh/fd",
   ssh_key_name: "fabric",
   # This variable indicate what IP should be used, only valid values are
   # private_ip or public_ip
@@ -58,8 +58,8 @@ cluster: {
   # each machine will be named ${name_prefix}001 to ${name_prefix}${stack_size}
   stack_size: 3,
 
-  etcdnodes: ["ip-10-0-0-66", "ip-10-0-0-240", "ip-10-0-0-253"],
-  builders: ["ip-10-0-0-66"],
+  etcdnodes: ["ip-10-0-0-16", "ip-10-0-0-189", "ip-10-0-0-5"],
+  builders: ["ip-10-0-0-16"],
 
   flannel_repo: "https://github.com/coreos/flannel/releases/download/v0.10.0/flannel-v0.10.0-linux-amd64.tar.gz",
   etcd_repo: "https://github.com/coreos/etcd/releases/download/v3.3.2/etcd-v3.3.2-linux-amd64.tar.gz",

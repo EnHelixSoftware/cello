@@ -53,10 +53,10 @@
                 "path": "/root/.hfc-key-store"
             },
             "signedCert": {
-                  "path": "{{ '/fabriccerts/keyfiles/'+org+'/users/Admin@'+org+'/msp/admincerts/Admin@'+org+'-cert.pem' }}"
+                  "path": "{{ '/fabriccerts/keyfiles/'+org+'/users/Admin@'+org+'/msp/admincerts/' }}"
             },
             "adminPrivateKey": {
-                  "path": "{{ '/fabriccerts/keyfiles/'+org+'/users/Admin@'+org+'/msp/keystore/admin_private.key' }}"
+                  "path": "{{ '/fabriccerts/keyfiles/'+org+'/users/Admin@'+org+'/msp/keystore/' }}"
             }
         }{{ '' if loop.last else ',' }}
 {% endfor %}
